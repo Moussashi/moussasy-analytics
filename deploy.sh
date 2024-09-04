@@ -12,6 +12,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:Moussashi/portfolio-pro.git main:gh-pages
+git push -f git@github.com:Moussashi/moussasy-analytics.git main:gh-pages
 
 cd -
