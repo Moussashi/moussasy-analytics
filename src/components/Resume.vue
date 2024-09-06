@@ -61,7 +61,7 @@
 
             </section>
             </div>
-            <img src="../assets/CVproSY" class="CV" alt="CV pro">
+            <img src="../assets/CVproSY.png" class="CV" alt="CV pro">
 
         </div>
 
