@@ -30,13 +30,15 @@
         <!-- How i work -->
         <h1 v-if="english">My Projects</h1>
         <h1 v-else>Mes projets</h1>
+
         <section>
+            <!-- PROJET OPENCLASSROOMS -->
             <div class="projects">
                 <div class="prjTxt">
                     <h2>Machine learning project</h2>
-                    <h4 v-if="english">Small Ml project, the goal was to create a model which could differenciate real and false bill</h4>
+                    <h4 v-if="english">Introduction to Machine Learning project, the goal was to create a model which could differenciate real and false bill</h4>
                     <h4 v-else>Projet d'introduction au Machine learning, le but étant de créer un model pouvant différencier vrais et faux billets</h4>
-                    <button class="btn1">Voir ce projet</button>
+                    <button class="btn1"><a href="https://github.com/Moussashi/ML-introduction/blob/main/SY_Moussa_P10%20code.ipynb" target="_blank" rel="noopener noreferrer">Voir ce projet</a></button>
                 </div>
                 <div class="prjImg">
                     <img src="../assets/machine.jpeg" alt="">
@@ -45,6 +47,7 @@
 
             <div class="separator"><fa class="icon" icon="cloud"/></div>
 
+            <!-- TABLEAU PUBLIC -->
             <div class="projects">
                 <div class="prjImg">
                     <img src="../assets/map.png" alt="">
@@ -60,9 +63,11 @@
 
             <div class="separator"><fa class="icon" icon="cloud"/></div>
 
+
+
             <div class="projects">
                 <div class="prjTxt">
-                    <h2>MyFitPage</h2>
+                    <h2>Analytics project</h2>
                     <h4>Projet en construction</h4>
                     <button class="btn3">-- <fa class="icon" icon="hammer"/>--</button>
                 </div>
