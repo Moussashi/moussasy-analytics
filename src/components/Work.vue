@@ -38,7 +38,8 @@
                     <h2>Machine learning project</h2>
                     <h4 v-if="english">Introduction to Machine Learning project, the goal was to create a model which could differenciate real and false bill</h4>
                     <h4 v-else>Projet d'introduction au Machine learning, le but étant de créer un model pouvant différencier vrais et faux billets</h4>
-                    <button class="btn1"><a href="https://github.com/Moussashi/ML-introduction/blob/main/SY_Moussa_P10%20code.ipynb" target="_blank" rel="noopener noreferrer">Voir ce projet</a></button>
+                    <button v-if="english" class="btn1"><a href="https://github.com/Moussashi/ML-introduction/blob/main/SY_Moussa_P10%20code.ipynb" target="_blank" rel="noopener noreferrer">Check project</a></button>
+                    <button v-else class="btn1"><a href="https://github.com/Moussashi/ML-introduction/blob/main/SY_Moussa_P10%20code.ipynb" target="_blank" rel="noopener noreferrer">Voir ce projet</a></button>
                 </div>
                 <div class="prjImg">
                     <img src="../assets/machine.jpeg" alt="">
@@ -56,8 +57,8 @@
                     <h2>Visualisations</h2>
                     <h4 v-if="english">Different visualisation created for projects or fun</h4>
                     <h4 v-else>Differentes visualisations crées pour des projects ou pour le plaisir </h4>
-                    <button v-if="english" class="btn2"><a href="https://public.tableau.com/app/profile/moussa.sy/vizzes" target="blank_"></a>Check projects</button>
-                    <button v-else class="btn2"><a href="https://public.tableau.com/app/profile/moussa.sy/vizzes"></a>voir ces projets</button>
+                    <button v-if="english" class="btn2"><a href="https://public.tableau.com/app/profile/moussa.sy/vizzes" target="blank_">Check projects</a></button>
+                    <button v-else class="btn2"><a href="https://public.tableau.com/app/profile/moussa.sy/vizzes">voir ces projets</a></button>
                 </div>
             </div>
 
