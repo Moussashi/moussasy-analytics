@@ -10,7 +10,7 @@ const app = createApp(App)
 app.config.productionTip = false;
 
 createApp(App).use(VueGtag, {
-    config: { id: "G-EZCE3LETTC" }
+    config: { id: "G-H11Q5XE4SP" }
 })
 
 library.add(fas)
