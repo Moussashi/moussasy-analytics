@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <meta name="google-site-verification" content="aXJnaMN6D8FLDs6PC3b0jBPiC-Vx1u7eeCkGn4f9zUE" />
+  </head>
 
 
   <div id="wrapper">

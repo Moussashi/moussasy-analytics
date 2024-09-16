@@ -9,9 +9,11 @@ import VueGtag from "vue-gtag";
 const app = createApp(App)
 app.config.productionTip = false;
 
-createApp(App).use(VueGtag, {
+app.use(VueGtag, {
     config: { id: "G-H11Q5XE4SP" }
 })
+
+
 
 library.add(fas)
 
