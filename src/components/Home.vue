@@ -29,9 +29,10 @@
             
             <transition name="fade">
             <div class="components" v-if="navDeployed">
-              <router-link to="/portfolio/work" :class="disapear"> <p>Work</p> </router-link>
-              <router-link to="/portfolio/resume"> <p>Resume</p> </router-link>
-              <router-link to="/portfolio/contact"> <p>Contact</p> </router-link>
+              <router-link to="/portfolio/work" :class="disapear" class="list"> <p>Work</p> </router-link>
+              <router-link to="/portfolio/resume" class="list"> <p>Resume</p> </router-link>
+              <router-link to="/portfolio/skills" class="list"> <p>Skills</p> </router-link>
+              <router-link to="/portfolio/contact" class="list"> <p>Contact</p> </router-link>
             </div>
             </transition>
 
@@ -148,6 +149,9 @@ header {
 .components p {
   font-size: 2rem;
 }
+.list {
+
+}
 button {
   z-index: 2;
   padding: 3%;
@@ -168,13 +172,13 @@ p:hover {
   color: black;
 }
 #triforce {
-  width: 25vw;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   font-size: 2rem;
 }
 #navDeployed {
-  width: 20vw;
+  width: auto;
   margin: 0 auto;
   font-size: 2rem;
 }
@@ -271,6 +275,10 @@ video {
   }
   .components {
     flex-direction: column;
+    height: 50px;
+  }
+  .components p{
+    height: 15px;
   }
 }
 </style>

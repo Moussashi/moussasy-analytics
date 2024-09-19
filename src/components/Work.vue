@@ -23,12 +23,13 @@
                 id="nav"
                 :home="navbar.home"
                 :resume="navbar.resume"
+                :skills="navbar.skills"
                 :contact="navbar.contact"></nav-bar>
 
         </section>
 
         <!-- How i work -->
-        <h1 v-if="english">My Projects</h1>
+        <h1 v-if="english">Projects</h1>
         <h1 v-else>Mes projets</h1>
 
         <section>
@@ -99,6 +100,7 @@ export default {
                 home: 'Home',
                 work: 'Work',
                 resume: 'Resume',
+                skills: 'Skills',
                 contact: 'Contact'
             }
         }

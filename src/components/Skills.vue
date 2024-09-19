@@ -377,7 +377,7 @@ ul {
   width: 80vw;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-left: 0;
 }
 }
 </style>

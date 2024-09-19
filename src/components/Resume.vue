@@ -23,11 +23,13 @@
                     id="nav"
                     :home="navbar.home"
                     :work="navbar.work"
+                    :skills="navbar.skills"
                     :contact="navbar.contact"></nav-bar>
 
                 </section>
 
                 <section id="description"> 
+                <img src="../assets/CVproSY.png" class="CV" alt="CV pro">
                     
                 <div v-if="!english" class="changeLanguage">
                     <img src="../assets/plume.png" alt="plume en ecriture">
@@ -61,7 +63,7 @@
 
             </section>
             </div>
-            <img src="../assets/CVproSY.png" class="CV" alt="CV pro">
+            
 
         </div>
 
@@ -113,7 +115,7 @@
                                 
                             </div>
 
-                            <div class="bballText">
+                            <div class="bballText basketball">
                                 <h3>Basket-Ball <fa class="icon" icon="basketball"/></h3>
                                 <p v-if="!english" class="changeLanguage">Pratique active du basketball en compétition et pour le plaisir depuis 2003,
                                     suivi régulier de l'actualité basket et du sport en général (football, boxe, arts martiaux).
@@ -123,7 +125,6 @@
                                     Played basketball in competition and as a hobby since 2003, follow sports actuality daily 
                                     (soccer, boxing, martial arts...). Martial artist (Boxing, Vo-Vietnam, Hapkido, brazilian Jiu jitsu)
                                 </p>
-                                <img src="../assets/bballMe.jpeg" alt="Photographie de moi même en activité">
                             </div>
                             
                         </div>
@@ -196,6 +197,7 @@ export default {
                 home: 'Home',
                 work: 'Work',
                 resume: 'Resume',
+                skills: 'Skills',
                 contact: 'Contact',
             },
         }
@@ -463,7 +465,7 @@ right: 1%;
     z-index: 99;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(245, 232, 224);
+    color: black;
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
@@ -608,7 +610,13 @@ li:hover {
     }
 }
 
-/***************************** */
+
+
+
+/***************************** RESPONSIVE **********************/
+
+
+
 
 @media only screen and (max-width: 720px) {
     .slide > img {
@@ -616,6 +624,40 @@ li:hover {
         width: auto;
         margin: auto;
         object-fit: scale-down;
+    }
+    .title_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .title_wrapper img {
+        width: 90vw;
+    }
+    .quill {
+        width: 30vw;
+        margin-left: 10px;
+    }
+    #description p {
+        text-align: center;
+    }
+    li {
+        font-family: Monoton;
+        font-size: 8vw;
+    }
+    .chess_astro {
+        flex-direction: column;
+    }
+    .chess, .astro, .books {
+        width: 100vw;
+        height: 50vh;
+    }
+    .basketball {
+        background-image: url('../assets/bballMe.jpeg');
+        background-size: cover;
+        width: 100vw;
+        height: 80vh;
+    }
+    .galerieCard h3 {
+        font-size: 1.6rem;
     }
 }
 </style>

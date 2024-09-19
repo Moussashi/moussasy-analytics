@@ -11,6 +11,7 @@
         :home="navbar.home"
         :resume="navbar.resume"
         :work="navbar.work"
+        :skills="navbar.skills"
       >
       </nav-bar>
     </div>
@@ -59,6 +60,7 @@ export default {
         home: "Home",
         work: "Work",
         resume: "Resume",
+        skills: "Skills",
         contact: "Contact",
         thanks: false,
         message: "Thank you, I will respond as soon as possible",
@@ -261,6 +263,10 @@ ul {
   h1 {
     font-size: 3rem;
     margin: auto;
+  }
+  button {
+    background-color: black;
+    color: white;
   }
 }
 </style>

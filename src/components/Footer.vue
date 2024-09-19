@@ -2,7 +2,7 @@
     <footer>
         <p>Made with Vue.js</p>
         <p>With Love</p>
-        <p>2022</p>
+        <p>2024</p>
     </footer>
 </template>
 
