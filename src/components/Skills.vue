@@ -120,6 +120,17 @@ import navBar from "./UI/navBar.vue";
 export default {
   components: { CustomMap, navBar },
   data() {
+
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M7LMFDHV');
+
+
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7LMFDHV"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
     return {
       title: ["S", "K", "I", "L", "L", "S"],
       navbar: {
